@@ -15,8 +15,7 @@ setInterval(() => {
 
 }, 1000);
 
-setInterval(showTime, 1000); 
-function showTime() { 
+showTime = () => { 
     let time = new Date(); 
     let hour = time.getHours(); 
     let min = time.getMinutes(); 
@@ -36,10 +35,8 @@ function showTime() {
     min = min < 10 ? "0" + min : min; 
     sec = sec < 10 ? "0" + sec : sec; 
   
-    let currentTime = hour + ":" 
-            + min + ":" + sec + am_pm; 
-  
-    document.getElementById("digitalClock") 
-            .innerHTML = currentTime; 
-} 
+    let currentTime = hour + ":" + min + ":" + sec + am_pm; 
+    document.getElementById("digitalClock").innerHTML = currentTime; 
+    setTimeout(showTime, 1000)
+}
 showTime(); 
