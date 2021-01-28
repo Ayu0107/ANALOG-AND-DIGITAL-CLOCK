@@ -3,6 +3,7 @@ setInterval(() => {
     htime = date.getHours();
     mtime = date.getMinutes();
     stime = date.getSeconds();
+    am_pm = " AM"; 
     hrotation = 30*htime + mtime/2;
     mrotation = 6*mtime;
     srotation = 6*stime;
@@ -13,30 +14,21 @@ setInterval(() => {
     
     console.log(date);
 
-}, 1000);
-
-showTime = () => { 
-    let time = new Date(); 
-    let hour = time.getHours(); 
-    let min = time.getMinutes(); 
-    let sec = time.getSeconds(); 
-    am_pm = " AM"; 
-  
-    if (hour > 12) { 
-        hour -= 12; 
+    if (htime > 12) { 
+        htime -= 12; 
         am_pm = " PM"; 
     } 
-    if (hour == 0) { 
-        hour = 12; 
+    if (htime == 0) { 
+        htime = 12; 
         am_pm = " AM"; 
     } 
   
-    hour = hour < 10 ? "0" + hour : hour; 
-    min = min < 10 ? "0" + min : min; 
-    sec = sec < 10 ? "0" + sec : sec; 
+    htime = htime < 10 ? "0" + htime : htime; 
+    mtime = mtime < 10 ? "0" + mtime : mtime; 
+    stime = stime < 10 ? "0" + stime : stime; 
   
-    let currentTime = hour + ":" + min + ":" + sec + am_pm; 
+    let currentTime = htime + ":" + mtime + ":" + stime + am_pm; 
     document.getElementById("digitalClock").innerHTML = currentTime; 
-    setTimeout(showTime, 1000)
-}
-showTime(); 
+
+}, 1000);
+
