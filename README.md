@@ -1,1 +1,2 @@
-# DIGITAL-AND-ANALOG-CLOCK
+# ANALOG-AND-DIGITAL-CLOCK
+A responsive website with an analog clock and a digital clock displaying current time
