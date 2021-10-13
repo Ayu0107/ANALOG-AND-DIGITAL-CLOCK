@@ -5,3 +5,5 @@ Tech stack:
   - Html
   - CSS
   - JavaScript
+
+The link for the application is https://ayu0107.github.io/ANALOG-AND-DIGITAL-CLOCK/
