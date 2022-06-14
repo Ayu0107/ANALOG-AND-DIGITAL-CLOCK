@@ -1,4 +1,5 @@
-# ANALOG-AND-DIGITAL-CLOCK
+# Analog-And-Digital-Clock
+
 A responsive website with an analog clock and a digital clock displaying current time.
 
 Tech stack:
