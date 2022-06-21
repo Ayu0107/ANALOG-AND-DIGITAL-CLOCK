@@ -7,4 +7,4 @@ Tech stack:
   - CSS
   - JavaScript
 
-The link for the application is [https://ayu0107.github.io/ANALOG-AND-DIGITAL-CLOCK/](https://ayushiiaggarwall.github.io/Analog-And-Digital-Clock/)
+The link for the application is [https://ayushiiaggarwall.github.io/ANALOG-AND-DIGITAL-CLOCK/](https://ayushiiaggarwall.github.io/Analog-And-Digital-Clock/)
